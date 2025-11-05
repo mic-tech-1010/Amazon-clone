@@ -5,9 +5,9 @@ import ProductSlider from "./ProductSlider";
 
 
 function Main() {
-    const isTablet = useMediaQuery("(min-width: 480px)")
+    const isTablet = useMediaQuery("(min-width: 640px)")
     return (
-        <main>
+        <main id="main">
             {isTablet && <ImageCarousel />}
             <CategoryCards />
             <ProductSlider />

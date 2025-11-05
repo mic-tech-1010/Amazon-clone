@@ -166,7 +166,7 @@ const oneByThreeGrid = "grid grid-cols-3 [&>li:first-child]:col-span-3 [&>*:not(
 
 function CategoryCards() {
     return (
-        <section className="mt-8 min-[30rem]:mt-[-23%] z-20 relative px-0 sm:px-4 overflow-hidden">
+        <section className="mt-8 sm:mt-[-23%] z-20 relative px-0 sm:px-4 overflow-hidden">
             <div className="grid grid-flow-col auto-cols-[90%] min-[30rem]:auto-cols-[75%] overflow-auto scrollbar-hide sm:grid-flow-row sm:grid-cols-[repeat(auto-fit,minmax(296px,1fr))] gap-4 px-4 sm:px-0">
                 <ShopCategoryCard
                     title="Shop your Home Essentials"

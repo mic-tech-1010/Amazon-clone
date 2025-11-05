@@ -54,6 +54,9 @@
   --color-nav-color: var(--nav-color);
   --color-submenu-bgcolor: var(--submenu-bgcolor);
   --color-submenu-color: var(--submenu-color);
+
+  /*|| Breakpoint */
+  --breakpoint-tablet: 47.5rem;
 }
 
 :root {
@@ -103,7 +106,7 @@
 }
 
 .dark {
-  --background: hsl(213, 28%, 19%);
+  --background: #1d2229;
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.21 0.006 285.885);
   --card-foreground: oklch(0.985 0 0);

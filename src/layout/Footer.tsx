@@ -4,9 +4,9 @@ export default function Footer() {
 
       {/* Back to top */}
       <div className="text-center text-white bg-[#37475a] py-2">
-        <button data-scroll-to-top className="text-[13px] bg-transparent border-none">
+        <a href="#main" className="text-[13px] bg-transparent border-none">
           Back to top
-        </button>
+        </a>
       </div>
 
       {/* Top links */}
@@ -114,7 +114,8 @@ export default function Footer() {
 
       {/* Bottom links */}
       <div className="bg-[#131A22] text-center pb-4">
-        <h4 className="md:hidden font-semibold text-base">
+
+        <h4 className="md:hidden font-semibold text-base text-white">
           <a href="#">Already a customer? Sign in</a>
         </h4>
 
@@ -133,6 +134,7 @@ export default function Footer() {
         <p className="text-[#ddd] text-[12px] leading-tight">
           &copy; 1966–2025 Amazon.com, Inc. or its affiliates
         </p>
+
       </div>
     </footer>
   );

@@ -11,15 +11,15 @@ import {
     SheetTitle,
     SheetTrigger,
 } from "@/components/ui/sheet"
-import {  Menu } from "lucide-react"
+import { Menu } from "lucide-react"
 
 function HamburgerMenu() {
     return (
         <Sheet>
             <SheetTrigger asChild>
-                <Button variant="navButton" className="cursor-pointer p-0 gap-0.5">
+                <Button variant="navButton" className="cursor-pointer p-0 max-tablet:px-0! gap-0.5">
                     <Menu size={28} />
-                    <span>All</span>
+                    <span className="max-tablet:hidden">All</span>
                 </Button>
             </SheetTrigger>
             <SheetContent side="left" className="w-[90vw]">

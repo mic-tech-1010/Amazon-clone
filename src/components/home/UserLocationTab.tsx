@@ -18,17 +18,18 @@ import {
     DrawerTitle,
     DrawerTrigger,
 } from "@/components/ui/drawer"
+import { ChevronDown } from 'lucide-react';
 
 
-function UserLocationTab({ isDesktop }: { isDesktop: boolean }) {
+function UserLocationTab({ isTablet }: { isTablet: boolean }) {
 
     const [open, setOpen] = useState(false)
 
-    if (isDesktop) {
+    if (isTablet) {
         return (
             <Dialog open={open} onOpenChange={setOpen}>
                 <DialogTrigger asChild>
-                    <Button variant="navButton" className='flex items-end gap-0.5 cursor-pointer'>
+                    <Button variant="navButton" className='flex items-end gap-0.5 cursor-pointer max-tablet:flex-auto max-tablet:order-3 max-tablet:min-w-full'>
                         <img src="images/location_icon.png" height="100" width="100" alt="" className='h-5 w-auto' />
                         <p className='text-left leading-[1.1] text-gray-300 text-[13px]'>Deliver to
                             <span className='block text-nav-color text-[15px]'>United Kingdom</span>
@@ -51,11 +52,12 @@ function UserLocationTab({ isDesktop }: { isDesktop: boolean }) {
     return (
         <Drawer open={open} onOpenChange={setOpen}>
             <DrawerTrigger asChild>
-                <Button variant="navButton" className='flex items-end gap-0.5 cursor-pointer'>
-                    <img src="images/location_icon.png" height="100" width="100" alt="" className='h-5 w-auto' />
-                    <p className='text-left leading-[1.1] text-gray-300 text-[13px]'>Deliver to
-                        <span className='block text-nav-color text-[15px]'>United Kingdom</span>
+                <Button variant="navButton" className='flex items-end gap-0.5 cursor-pointer max-tablet:flex-auto max-tablet:order-3 max-tablet:justify-start'>
+                    <img src="images/location_icon.png" height="100" width="100" alt="" className='h-4.5 tablet:h-5 w-auto'/>
+                    <p className='text-left leading-[1.1] tablet:text-gray-300 text-[14px]'>Deliver to
+                        <span className='inline tablet:block tablet:text-nav-color text-[14px] tablet:text-[15px]'> United Kingdom</span>
                     </p>
+                    <ChevronDown size={18} strokeWidth={1}/>
                 </Button>
             </DrawerTrigger>
             <DrawerContent>

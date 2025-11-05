@@ -79,7 +79,7 @@ const categories = [
 
 function SearchTab() {
     return (
-        <search className="flex-1">
+        <search className="flex-1 max-tablet:flex-auto max-tablet:order-1 max-tablet:min-w-full max-tablet:px-2.5 max-tablet:pt-2 max-tablet:pb-1.5">
             <form id="search-form" className="flex h-10 w-full rounded-sm" role="search">
                 <div className="h-full">
                     <Label htmlFor="search-category" className="sr-only">search category</Label>
